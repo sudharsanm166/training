@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html,
+    body {
+      display: grid;
+      height: 100%;
+      width: 100%;
+      place-items: center;
+      background: linear-gradient(-135deg, #42275a, #734b6d);
+    }
+
+    ::selection {
+      background: #4158d0;
+      color: #fff;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(255, 255, 255);
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    td {
+      color: white;
+      font-size: 0.775rem;
+      letter-spacing: 3%;
+      padding: 3px;
+    }
+	th {
+		
+      background-color: rgb(0, 0, 0);
+      color: white;
+      font-size: 0.875rem;
+      letter-spacing: 2%;
+      text-transform: uppercase;
+	  padding: 3px;
+    }
+    a:link{
+    color:rgb(255,255,255);
+    background-color: transparent;
+    text-decoration: none;
+    }
+    
+  </style>
+</head>
+<body>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Emp Id</th>
+				<th>Leave Id</th>
+				<th>No Of Days</th>
+				<th>Reason</th>
+				<th>Status</th>
+			</tr>
+		</thead>
+
+		<tr th:each="leave:${leavelist}">
+			<td><a th:href="@{findOneLeave(id=${leave.empId})}"><span th:text="${leave.empId}"></span></a></td>
+			<td><span th:text="${leave.leaveid}"></span></td>
+			<td><span th:text="${leave.noofdays}"></span></td>
+			<td><span th:text="${leave.reason}"></span></td>
+			<td><span th:text="${leave.status}"></span></td>
+			
+		</tr>
+	</table>
+</body>
+
+</html>

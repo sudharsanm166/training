@@ -1,0 +1,126 @@
+2022-10-25 09:37:05.063  INFO 19792 --- [main] com.demo.spring.EmployeeApplication      : Starting EmployeeApplication using Java 11 on WKWZTbtyTd9jLsQ with PID 19792 (C:\workspace2\employee-management\Employee-Service\target\classes started by sudm3 in C:\workspace2\employee-management\Employee-Service)
+2022-10-25 09:37:05.084  INFO 19792 --- [main] com.demo.spring.EmployeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-10-25 09:37:06.965  INFO 19792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-25 09:37:07.482  INFO 19792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 496 ms. Found 4 JPA repository interfaces.
+2022-10-25 09:37:08.137  INFO 19792 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e1a330f2-3ffb-348e-bcdb-7f8b157f10ac
+2022-10-25 09:37:09.105  INFO 19792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-25 09:37:09.133  INFO 19792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-25 09:37:09.136  INFO 19792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-25 09:37:09.590  INFO 19792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-25 09:37:09.591  INFO 19792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4384 ms
+2022-10-25 09:37:09.999  INFO 19792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-25 09:37:10.168  INFO 19792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-25 09:37:10.329  INFO 19792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-25 09:37:10.502  INFO 19792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-25 09:37:10.879  INFO 19792 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-25 09:37:11.169  INFO 19792 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2022-10-25 09:37:12.848  INFO 19792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-25 09:37:12.865  INFO 19792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-25 09:37:14.102  WARN 19792 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-25 09:37:17.285  INFO 19792 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-10-25 09:37:18.517  WARN 19792 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-10-25 09:37:18.648  INFO 19792 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-25 09:37:18.744  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-25 09:37:18.754  INFO 19792 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-25 09:37:18.800  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-25 09:37:18.801  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-25 09:37:18.801  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-25 09:37:18.801  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-25 09:37:18.801  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-25 09:37:18.802  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-25 09:37:18.802  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-25 09:37:19.531  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-25 09:37:19.535  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-25 09:37:19.540  INFO 19792 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-25 09:37:19.552  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666670839550 with initial instances count: 0
+2022-10-25 09:37:19.556  INFO 19792 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2022-10-25 09:37:19.557  INFO 19792 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666670839557, current=UP, previous=STARTING]
+2022-10-25 09:37:19.561  INFO 19792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/WKWZTbtyTd9jLsQ.global.publicisgroupe.net:employee-service: registering service...
+2022-10-25 09:37:19.614  INFO 19792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-25 09:37:19.616  INFO 19792 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2022-10-25 09:37:19.658  INFO 19792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/WKWZTbtyTd9jLsQ.global.publicisgroupe.net:employee-service - registration status: 204
+2022-10-25 09:37:20.549  INFO 19792 --- [main] com.demo.spring.EmployeeApplication      : Started EmployeeApplication in 17.567 seconds (JVM running for 19.802)
+2022-10-25 09:37:49.539  INFO 19792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-25 09:37:49.540  INFO 19792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-25 09:37:49.540  INFO 19792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-25 09:37:49.541  INFO 19792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-25 09:37:49.541  INFO 19792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-25 09:37:49.541  INFO 19792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-10-25 09:37:49.541  INFO 19792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-25 09:37:49.583  INFO 19792 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-25 09:40:51.732  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-25 09:40:51.734  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2022-10-25 09:40:51.734  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666671051734, current=DOWN, previous=UP]
+2022-10-25 09:40:51.735  INFO 19792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/WKWZTbtyTd9jLsQ.global.publicisgroupe.net:employee-service: registering service...
+2022-10-25 09:40:51.745  INFO 19792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/WKWZTbtyTd9jLsQ.global.publicisgroupe.net:employee-service - registration status: 204
+2022-10-25 09:40:52.180  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-25 09:40:52.217  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-25 09:40:52.223  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-25 09:40:52.239  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-25 09:40:52.241  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-10-25 09:40:55.255  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-10-25 09:40:55.274  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/WKWZTbtyTd9jLsQ.global.publicisgroupe.net:employee-service - deregister  status: 200
+2022-10-25 09:40:55.284  INFO 19792 --- [RMI TCP Connection(13)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-10-25 09:59:43.491  INFO 23648 --- [main] com.demo.spring.EmployeeApplication      : Starting EmployeeApplication using Java 11 on WKWZTbtyTd9jLsQ with PID 23648 (C:\workspace2\employee-management\Employee-Service\target\classes started by sudm3 in C:\workspace2\employee-management\Employee-Service)
+2022-10-25 09:59:43.495  INFO 23648 --- [main] com.demo.spring.EmployeeApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-10-25 09:59:44.609  INFO 23648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-25 09:59:44.909  INFO 23648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 287 ms. Found 4 JPA repository interfaces.
+2022-10-25 09:59:45.277  INFO 23648 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e1a330f2-3ffb-348e-bcdb-7f8b157f10ac
+2022-10-25 09:59:45.857  INFO 23648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-25 09:59:45.872  INFO 23648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-25 09:59:45.872  INFO 23648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-25 09:59:46.148  INFO 23648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-25 09:59:46.148  INFO 23648 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2585 ms
+2022-10-25 09:59:46.400  INFO 23648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-25 09:59:46.534  INFO 23648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-25 09:59:46.644  INFO 23648 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-25 09:59:46.760  INFO 23648 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-25 09:59:47.046  INFO 23648 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-25 09:59:47.275  INFO 23648 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2022-10-25 09:59:48.190  INFO 23648 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-25 09:59:48.208  INFO 23648 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-25 09:59:49.407  WARN 23648 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-25 09:59:51.844  INFO 23648 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-10-25 09:59:52.922  WARN 23648 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-10-25 09:59:53.068  INFO 23648 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-25 09:59:53.154  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-25 09:59:53.163  INFO 23648 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-25 09:59:53.209  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-25 09:59:53.210  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-25 09:59:53.210  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-25 09:59:53.210  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-25 09:59:53.210  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-25 09:59:53.211  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-25 09:59:53.211  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-25 09:59:53.898  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-25 09:59:53.904  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-25 09:59:53.909  INFO 23648 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-25 09:59:53.919  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666672193917 with initial instances count: 0
+2022-10-25 09:59:53.925  INFO 23648 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2022-10-25 09:59:53.927  INFO 23648 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666672193927, current=UP, previous=STARTING]
+2022-10-25 09:59:53.931  INFO 23648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/WKWZTbtyTd9jLsQ.global.publicisgroupe.net:employee-service: registering service...
+2022-10-25 09:59:53.984  INFO 23648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-25 09:59:53.986  INFO 23648 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2022-10-25 09:59:54.032  INFO 23648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/WKWZTbtyTd9jLsQ.global.publicisgroupe.net:employee-service - registration status: 204
+2022-10-25 09:59:54.888  INFO 23648 --- [main] com.demo.spring.EmployeeApplication      : Started EmployeeApplication in 12.869 seconds (JVM running for 14.393)
+2022-10-25 10:00:23.908  INFO 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-25 10:00:23.910  INFO 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-25 10:00:23.911  INFO 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-25 10:00:23.911  INFO 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-25 10:00:23.912  INFO 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-25 10:00:23.913  INFO 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-10-25 10:00:23.913  INFO 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-25 10:00:23.959  INFO 23648 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-25 10:01:40.287  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-25 10:01:40.289  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2022-10-25 10:01:40.289  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666672300289, current=DOWN, previous=UP]
+2022-10-25 10:01:40.290  INFO 23648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/WKWZTbtyTd9jLsQ.global.publicisgroupe.net:employee-service: registering service...
+2022-10-25 10:01:40.302  INFO 23648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/WKWZTbtyTd9jLsQ.global.publicisgroupe.net:employee-service - registration status: 204
+2022-10-25 10:01:40.742  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-25 10:01:40.780  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-25 10:01:40.785  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-25 10:01:40.797  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-25 10:01:40.799  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-10-25 10:01:43.804  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-10-25 10:01:43.822  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/WKWZTbtyTd9jLsQ.global.publicisgroupe.net:employee-service - deregister  status: 200
+2022-10-25 10:01:43.836  INFO 23648 --- [RMI TCP Connection(10)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

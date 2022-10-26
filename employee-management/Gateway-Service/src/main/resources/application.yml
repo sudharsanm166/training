@@ -1,0 +1,32 @@
+server:
+  port: 8585
+
+spring:
+  application:
+    name: gateway-services
+  cloud:
+    gateway:
+      routes:
+       - id: admin_services
+         uri: http://localhost:8081/
+         predicates:
+          - Path=/Admin/**
+       - id: employee_services
+         uri: http://localhost:8080/
+         predicates:
+          - Path=/Employee/**
+       - id: ui_services
+         uri: http://localhost:8082/
+         predicates:
+          - Path=/Ui/**
+  main:
+    web-application-type: reactive
+    
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka/}
+          
+
+      

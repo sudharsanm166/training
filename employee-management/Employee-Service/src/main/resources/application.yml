@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: 12345
+    url: jdbc:mariadb://localhost:3306/employeedb
+    username: root
+  application:
+    name: employee-service   
+  jpa:
+    show-sql: true
+    
+logging:
+ file:
+  name: logs/employee.log
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka/}

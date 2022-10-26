@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Insert title here</title>
+  </head>
+
+  <body>
+    <div class="table">
+      <table border="1">
+        <thead>
+          <tr class="head">
+            <th>Emp Id</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+		
+        <tr th:each="emp:${emplist}">
+          <td>
+            <a th:href="@{findOne(id=${emp.empId})}"
+              ><span th:text="${emp.empId}"></span
+            ></a>
+          </td>
+          <td><span th:text="${emp.name}"></span></td>
+          <td><span th:text="${emp.city}"></span></td>
+          <td><span th:text="${emp.salary}"></span></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    html,
+    body {
+      display: grid;
+      height: 100%;
+      width: 100%;
+      place-items: center;
+      background: linear-gradient(-135deg, #42275a, #734b6d);
+    }
+
+    ::selection {
+      background: #4158d0;
+      color: #fff;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(255, 255, 255);
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    td {
+      color: white;
+      font-size: 0.775rem;
+      letter-spacing: 3%;
+      padding: 3px;
+    }
+	th {
+      color: white;
+      font-size: 0.775rem;
+      letter-spacing: 3%;
+      padding: 3px;
+    }
+
+    .head {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      font-size: 0.875rem;
+      letter-spacing: 2%;
+      text-transform: uppercase;
+    }
+    a:link{
+    color:rgb(255,255,255);
+    background-color: transparent;
+    text-decoration: none;
+    }
+  </style>
+</html>
